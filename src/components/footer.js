@@ -34,6 +34,7 @@ const Footer = () => {
     );
   };
 
+  if (!user.authenticated) return <></>;
   return (
     <footer className="backdrop-blur-sm fixed bottom-0 z-40 w-full">
       <div className="flex items-center justify-center">
